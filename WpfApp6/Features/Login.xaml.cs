@@ -24,5 +24,27 @@ namespace WpfApp6.Features
         {
             InitializeComponent();
         }
+
+      
+        string AdminEmail = "admin@email.com";
+        string AdminPassword = "adminpassword";
+       
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
+        {
+            string email = EmailTextBox.Text;
+            string password = PasswordBox.Password;
+
+            if (email == AdminEmail && password == AdminPassword)
+            {
+
+                MessageBox.Show("You have been logged in successfully");
+            }
+            else
+            {
+              //لل home page
+               
+            }
+
+        }
     }
 }
